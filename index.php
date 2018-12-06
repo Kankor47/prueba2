@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+include_once './model/ProductoModelo.php';
 include_once './model/Produtos.php';
 session_start();
 ?>
