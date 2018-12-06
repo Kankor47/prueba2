@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include_once './model/Produtos.php';
+session_start();
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -28,8 +32,7 @@
                 <th>ACTUALIZAR</th>
             </tr>
             <?php
-            session_start();
-            include_once './model/Produtos.php';
+            
             //verificamos si existe en sesion el listado de productos:
             if (isset($_SESSION['listado'])) {
                 $listado = unserialize($_SESSION['listado']);

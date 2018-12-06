@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        include '../model/Producto.php';
+        include_once '../model/Productos.php';
         //obtenemos los datos de sesion:
         session_start();
         $producto = $_SESSION['producto'];
